@@ -1,0 +1,68 @@
+.group{
+    background-color: #212529;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+#nav{
+    display: none;
+}
+#displayMovies{
+    display: none;
+    background-color:#212529 ;
+}
+#logIn{
+    height: 100vh;
+    background-color: #212529;
+    
+    display: block;
+}
+#register{
+    height: 100vh;
+    background-color: #212529;
+    
+    display: none;
+}
+.log{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    /* height: 30vh; */
+    position: relative;
+    top: 100px;
+    padding: 30px;
+
+}
+::placeholder{
+    color:  #eee;
+}
+.header{
+    font-size: 40px;
+    color: #17a2b8;
+    margin-bottom: 20px;
+}
+#signUp{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#signUp:hover{
+    border-bottom:1px solid #eee;
+}
+@media only screen and (max-width: 600px) {
+    .responsive {
+      width: 75%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .responsive {
+      width: 50%;
+    }
+}
+#signin{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#signin:hover{
+    border-bottom:1px solid #eee;
+}
+h1{
+    background-image: linear-gradient(to right, #eee, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

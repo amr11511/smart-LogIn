@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="nav">
+      <nav class="fixed-top navbar navbar-dark navbar-expand-lg group">
+        <div class="container">
+          <a class="text-decoration-none text-white fs-5" href=""
+            >SMART LOGIN</a
+          >
+          <div class="d-flex">
+            <div class="ps-3 pt-2">
+              <button id="logOut" class="btn btn-outline-warning p-2">
+                Logout
+              </button>
+            </div>
+            <div class="ps-3 pt-3">
+              <p class="text-white">
+                Welcome , <span id="userWelcomeName"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="displayMovies" class="mt-5">
+      <div class="container mt-5 py-4">
+        <h1 class="fs-1 fw-bold text-center my-4">My Movies Lists</h1>
+
+        <div id="mov" class="row d-flex justify-content-center"></div>
+      </div>
+    </section>
+    <section id="logIn">
+      <div class="container log responsive">
+        <h2 class="text-center header">Smart Login System</h2>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+          class="form-control mb-3"
+          id="emailUser"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          required
+          class="form-control mb-3"
+          id="passUser"
+        />
+        <p id="wrongPass" class="m-3 text-center"></p>
+        <button id="butlOG" class="btn btn-outline-info w-100 mb-2">
+          Login
+        </button>
+        <p class="text-center text-white">
+          Don’t have an account?
+          <span class="text-decoration-none text-white" id="signUp" href=""
+            >Sign Up</span
+          >
+        </p>
+      </div>
+    </section>
+    <section id="register">
+      <div class="container log responsive">
+        <h2 class="text-center header">Smart Login System</h2>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          required
+          class="form-control mb-3"
+          id="userNameInput"
+        />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+          class="form-control mb-3"
+          id="userEmail"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          required
+          class="form-control mb-3"
+          id="userPass"
+        />
+        <p id="exist" class="m-3 text-center"></p>
+        <button id="butUp" class="btn btn-outline-info w-100 mb-2">
+          Sign Up
+        </button>
+        <p class="text-center text-white">
+          You have an account?
+          <span class="text-decoration-none text-white" id="signin" href=""
+            >Signin</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
